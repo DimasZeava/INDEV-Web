@@ -9,7 +9,7 @@ const ResultCard = () => {
   ];
 
   return (
-    <section className=" text-white py-8">
+    <section className="text-white py-8">
       <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
         {stats.map((stat, index) => (
           <div key={index}>
