@@ -1,14 +1,14 @@
+import React from "react";
+
 const Footer = () => {
   return (
-    <footer
-      className="bottom-0 w-screen"
-    >
+    <footer className="bottom-0 w-full">
       <div
-        className="w-full flex flex-col md:flex-row justify-between items-start p-10 bg-black/80 backdrop-blur-xl rounded-3xl"
+        className="w-full flex flex-col md:flex-row justify-between items-start p-10 bg-black/50 backdrop-blur-md rounded-3xl border border-white/10 shadow-lg"
       >
         {/* Logo dan Deskripsi */}
         <div className="mb-6 md:mb-0">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-4 pl-5">
             {/* Logo */}
             <img
               src="/assets/images/logo-indev.png" // Ganti dengan path logo Anda
@@ -16,7 +16,7 @@ const Footer = () => {
               className="w-auto h-20"
             />
           </div>
-          <p className="text-gray-200 max-w-md">
+          <p className="text-gray-200 max-w-md pl-5">
             <b>INDEV</b> is an information technology company specializing in web and
             mobile application development, website development, digital
             systems, and networking.
@@ -24,12 +24,12 @@ const Footer = () => {
         </div>
 
         {/* Menu Navigasi (Vertikal) */}
-        <nav className="w-right">
-          <ul className="flex flex-col space-y-3 mr-6 text-center">
+        <nav>
+          <ul className="flex flex-col space-y-3 text-left pr-20">
             <li>
               <a
                 href="#home"
-                className="text-white hover:text-gray-400 transition"
+                className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
               >
                 HOME
               </a>
@@ -37,7 +37,7 @@ const Footer = () => {
             <li>
               <a
                 href="#about"
-                className="text-white hover:text-gray-400 transition"
+                className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
               >
                 ABOUT
               </a>
@@ -45,7 +45,7 @@ const Footer = () => {
             <li>
               <a
                 href="#services"
-                className="text-white hover:text-gray-400 transition"
+                className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
               >
                 SERVICES
               </a>
@@ -53,7 +53,7 @@ const Footer = () => {
             <li>
               <a
                 href="#portfolio"
-                className="text-white hover:text-gray-400 transition"
+                className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
               >
                 PORTFOLIO
               </a>
@@ -61,7 +61,7 @@ const Footer = () => {
             <li>
               <a
                 href="#contact"
-                className="text-white hover:text-gray-400 transition"
+                className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
               >
                 CONTACT
               </a>
