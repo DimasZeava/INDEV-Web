@@ -36,24 +36,24 @@ const Navbar = () => {
           alt="logo-indev"
           className="logo w-36 h-auto"
         />
-        <div className="navigationLink flex justify-between gap-12">
+        <div className="navigationLink flex justify-between gap-9">
         <a
             href="#"
-            className="link relative pb-1 w-24 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+            className="link relative pb-1 w-12 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
           >
             HOME
             <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
           </a>
           <a
             href="#"
-            className="link relative pb-1 w-24 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+            className="link relative pb-1 w-16 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
           >
             ABOUT
             <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
           </a>
           <a
             href="#"
-            className="link relative pb-1 w-24 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+            className="link relative pb-1 w-20 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
           >
             SERVICES
             <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
@@ -67,7 +67,7 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="link relative pb-1 w-24 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+            className="link relative pb-1 w-20 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
           >
             CONTACT
             <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
