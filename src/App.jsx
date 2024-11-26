@@ -23,6 +23,7 @@ const App = () => {
       <ResultCard />
       <About />
       <Services />
+      <Portofolio />
       <Footer />
     </>
   );
