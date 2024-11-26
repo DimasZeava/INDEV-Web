@@ -17,15 +17,15 @@ const Footer = () => {
             />
           </div>
           <p className="text-gray-200 max-w-md pl-5">
-            <b>INDEV</b> is an information technology company specializing in web and
-            mobile application development, website development, digital
-            systems, and networking.
+            <b>INDEV</b> is an information technology <br></br>company specializing in web and
+            mobile <br></br>application development, website <br></br>development, digital
+            systems, and <br></br> networking.
           </p>
         </div>
 
         {/* Menu Navigasi (Vertikal) */}
         <nav>
-          <ul className="flex flex-col space-y-3 text-left pr-20">
+          <ul className="flex flex-col space-y-2 text-left pr-20">
             <li>
               <a
                 href="#home"
