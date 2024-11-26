@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import ResultCard from "./components/ResultCard";
 import About from "./components/About";
 import Services from "./components/Services";
+import Portofolio from "./components/Portofolio";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
