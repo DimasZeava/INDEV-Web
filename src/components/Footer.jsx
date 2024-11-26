@@ -1,23 +1,10 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer
-      className="absolute bottom-0 w-full flex justify-center"
-      style={{
-        background: "rgba(0, 0, 0, 0.8)", // Latar belakang hitam transparan
-      }}
+      className="absolute bottom-0 w-screen"
     >
       <div
-        className="container mx-auto flex flex-col md:flex-row justify-between items-start p-10"
-        style={{
-          background: "rgba(255, 255, 255, 0.1)", // Lapisan semi-transparan
-          backdropFilter: "blur(60px)", // Efek blur pada glassmorphism
-          WebkitBackdropFilter: "blur(60px)", // Untuk kompatibilitas Safari
-          border: "1px solid rgba(255, 255, 255, 0.2)", // Border halus semi-transparan
-          borderTopLeftRadius: "30px", // Rounded border hanya di kiri atas
-          borderTopRightRadius: "30px", // Rounded border hanya di kanan atas
-        }}
+        className="w-full flex flex-col md:flex-row justify-between items-start p-10 bg-black/80 backdrop-blur-xl rounded-3xl"
       >
         {/* Logo dan Deskripsi */}
         <div className="mb-6 md:mb-0">
