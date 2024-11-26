@@ -41,8 +41,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar sticky top-4 z-10 mx-16 my-2">
-      <div className="glass flex justify-between items-center align-middle dark:text-white bg-black/10 backdrop-blur-lg rounded-full py-3 px-9">
+    <nav className="navbar fixed top-0 left-0 w-full z-10">
+      <div className="glass flex justify-between items-center dark:text-white bg-black/10 backdrop-blur-lg rounded-full py-3 px-9 box-border mx-16 my-2">
         <img
           src="./assets/images/logo-indev.png"
           alt="logo-indev"
