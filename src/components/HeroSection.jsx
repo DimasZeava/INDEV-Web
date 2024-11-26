@@ -7,11 +7,7 @@ const HeroSection = () => {
 
   return (
     <section className="text-white py-20 px-8">
-<<<<<<< HEAD
       <div className="max-w-3xl mx-auto text-center rounded-xl bg-white/10 backdrop-blur-md py-12 px-6">
-=======
-      <div className="max-w-3xl mt-20 mx-auto text-center rounded-xl bg-white/10 backdrop-blur-md py-12 px-6">
->>>>>>> 1dfe1bc8d70bcee2860a6ca17fcf36deecb2c2d5
         <h1 className="text-4xl font-bold text-white mb-6">
           Not Offering a Service but Providing a Solution
         </h1>
