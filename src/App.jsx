@@ -1,9 +1,25 @@
-function App() {
+import React from 'react';
+import HeroSection from './components/HeroSection';
+import ResultCard from './components/Resultcard';
+import About from './components/About';
+import Services from './components/Services';
 
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+    <div>
+      {/* Hero Section */}
+      <HeroSection />
 
-export default App
+      {/* Result Card */}
+      <ResultCard />
+
+      {/* About Section */}
+      <About />
+
+      {/* Services Section */}
+      <Services />
+    </div>
+  );
+};
+
+export default App;
