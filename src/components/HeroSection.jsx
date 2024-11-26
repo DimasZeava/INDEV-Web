@@ -1,8 +1,12 @@
 import React from 'react';
 
 const HeroSection = () => {
+  const handleButtonClick = () => {
+    alert("Button clicked!"); // Ganti dengan fungsi yang diinginkan
+  };
+
   return (
-    <section className=" text-white py-20 px-8">
+    <section className="text-white py-20 px-8">
       <div className="max-w-3xl mx-auto text-center rounded-xl bg-white/10 backdrop-blur-md py-12 px-6">
         <h1 className="text-4xl font-bold text-white mb-6">
           Not Offering a Service but Providing a Solution
@@ -13,7 +17,10 @@ const HeroSection = () => {
           vision with our expertise to create a brighter digital future
           together.
         </p>
-        <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded transition">
+        <button
+          onClick={handleButtonClick}
+          className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded transition"
+        >
           Get in touch
         </button>
       </div>
