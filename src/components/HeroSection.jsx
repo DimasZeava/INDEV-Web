@@ -6,9 +6,9 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="text-white py-20 px-8">
-      <div className="max-w-3xl mx-auto text-center rounded-xl bg-white/10 backdrop-blur-md py-12 px-6">
-        <h1 className="text-4xl font-bold text-white mb-6">
+    <section className="text-white">
+      <div className="max-w-6xl mx-auto text-center rounded-xl bg-white/10 backdrop-blur-md py-8 px-40">
+        <h1 className="text-5xl font-bold text-white mb-6">
           Not Offering a Service but Providing a Solution
         </h1>
         <p className="text-lg text-gray-300 mb-8">
