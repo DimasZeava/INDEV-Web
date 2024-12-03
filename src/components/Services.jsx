@@ -1,22 +1,26 @@
-import React from 'react';
+import React from "react";
 
 const Services = () => {
   const services = [
     {
-      title: 'Web and Mobile Application Development',
-      icon: '💻', // Replace this with an SVG or icon component
+      title: "Web and Mobile Application Development",
+      image: "./assets/images/computer.png",
     },
     {
-      title: 'Digital System',
-      icon: '🖱️',
+      title: "Digital System",
+      image: "./assets/images/control-center.png",
     },
     {
-      title: 'Network Infrastructure',
-      icon: '🌐',
+      title: "Network Infrastructure",
+      image: "./assets/images/world-wide-web.png",
     },
     {
-      title: 'Visual Branding',
-      icon: '🎨',
+      title: "Network Infrastructure",
+      image: "./assets/images/network.png",
+    },
+    {
+      title: "Visual Branding",
+      image: "./assets/images/graphic-design.png",
     },
   ];
 
@@ -27,15 +31,17 @@ const Services = () => {
         <p className="text-gray-300 mb-8">
           What you consider a problem, we consider our specialty
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-12">
           {services.map((service, index) => (
             <div
-              key={index}
-              className="bg-gray-700 p-6 rounded-lg shadow-lg flex flex-col items-center"
-            >
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-lg font-semibold">{service.title}</h3>
+            key={index}
+            className="flex flex-col items-center"
+          >
+            <div className="bg-white/10 backdrop-blur-lg p-5 rounded-2xl">
+              <img src={service.image} className="text-4xl" alt={services.title}/>
             </div>
+            <h3 className="text-sm w-full text-center mt-2">{service.title}</h3>
+          </div>
           ))}
         </div>
       </div>

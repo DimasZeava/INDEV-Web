@@ -5,9 +5,9 @@ const About = () => {
     <section className="flex text-white py-10 px-6 max-w-6xl mx-auto">
       <div>
         <div className='flex'>
-          <h2 className="flex-none bg-black/90 backgdrop-blur-lg p-4 text-2xl font-bold mb-0">About Us</h2>
-          <div className="flex-1 bg-white/10 backdrop-blur-md p-5 rounded-tl-full" style={{
-          clipPath: "polygon(2% 0, 100% 0, 100% 0, 100% 100%, 0% 100%)",
+          <h2 className="z-10 flex-none bg-black/90 backgdrop-blur-lg p-4 text-2xl font-bold mb-0">About Us</h2>
+          <div className="curve-about flex-1 bg-white/10 backdrop-blur-md p-5 rounded-tl-full" style={{
+          clipPath: "polygon(4% 0, 100% 0, 100% 0, 100% 100%, 0% 100%)",
         }}></div>
         </div>
         <div className='bg-white/10 backdrop-blur-md p-5 rounded-s-3xl'>
@@ -21,9 +21,8 @@ const About = () => {
       </div>
       <div className='bg-white/10 backdrop-blur-md p-5 rounded-e-3xl'>
       <img
-          src="https://via.placeholder.com/700x600"
+          src="assets/images/office.png"
           alt="Office"
-          className="rounded-lg shadow-lg"
         />
       </div>
       {/* <div className="text-white p-8 rounded-xl flex flex-col bg-white/10 backdrop-blur-md py-4 px-14 md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
