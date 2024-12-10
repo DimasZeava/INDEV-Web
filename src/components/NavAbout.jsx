@@ -13,29 +13,49 @@ const NavAbout = () => {
         />
         <ul className="navigationLink flex justify-between gap-9">
           <li>
-            <Link to="/" className="hover:underline">
-              HOME
-            </Link>
+          <Link
+            to="/"
+            className="link relative pb-1 w-12 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+          >
+            HOME
+            <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
+          </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:underline text-white-400 transition-all">
-              ABOUT
-            </Link>
+          <Link
+            to="/about"
+            className="link relative pb-1 w-16 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+          >
+            ABOUT
+            <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
+          </Link>
           </li>
           <li>
-            <Link to="/services" className="hover:underline">
-              SERVICES
-            </Link>
+          <Link
+            to="/services"
+            className="link relative pb-1 w-20 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+          >
+            SERVICES
+            <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
+          </Link>
           </li>
           <li>
-            <Link to="/portfolio" className="hover:underline">
-              PORTFOLIO
-            </Link>
+          <Link
+            to="/portfolio"
+            className="link relative pb-1 w-24 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+          >
+            PORTFOLIO
+            <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
+          </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:underline">
-              CONTACT
-            </Link>
+          <Link
+            to="/contact"
+            className="link relative pb-1 w-20 text-center block transition-all hover:font-semibold text-slate-400 hover:text-white focus:text-white focus:font-semibold"
+          >
+            CONTACT
+            <span className="underline absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-0 bg-white transition-all"></span>
+          </Link>
           </li>
         </ul>
       </div>
@@ -91,12 +111,74 @@ const NavAbout = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-black text-center text-gray-400 py-4">
-        <p>© 2024 INDEV. All rights reserved. Designed with passion.</p>
-      </footer>
+      <footer className="bottom-0 w-full">
+        <div
+          className="w-full flex flex-col md:flex-row justify-between items-start p-10 bg-black/50 backdrop-blur-md rounded-3xl border border-white/10 shadow-lg"
+        >
+          {/* Logo dan Deskripsi */}
+          <div className="mb-6 md:mb-0">
+            <div className="flex items-center mb-4 pl-5">
+              {/* Logo */}
+              <img
+                src="/assets/images/logo-indev.png" // Ganti dengan path logo Anda
+                alt="Indev Logo"
+                className="w-auto h-20"
+              />
+            </div>
+            <p className="text-gray-200 max-w-md pl-5">
+              <b>INDEV</b> is an information technology <br></br>company specializing in web and
+              mobile <br></br>application development, website <br></br>development, digital
+              systems, and <br></br> networking.
+            </p>
+          </div>
 
-      {/* Curve Effect */}
-      <div className="curve-about"></div>
+          {/* Menu Navigasi (Vertikal) */}
+          <nav>
+            <ul className="flex flex-col space-y-2 text-left pr-20">
+              <li>
+                <a
+                  href="#home"
+                  className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
+                >
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
+                >
+                  ABOUT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
+                >
+                  SERVICES
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
+                >
+                  PORTFOLIO
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="text-gray-400 hover:text-white hover:border-b-2 hover:border-white transition duration-200"
+                >
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
     </div>
   );
 };
