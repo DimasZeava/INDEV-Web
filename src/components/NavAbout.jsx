@@ -4,17 +4,21 @@ import { Link } from "react-router-dom";
 const NavAbout = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-blue-900 text-white">
-      {/* Navbar */}
-      <nav className="glass-effect flex justify-between items-center py-4 px-8 text-white">
-        <div className="text-2xl font-bold">indev</div>
-        <ul className="flex space-x-6">
+    <nav className="navbar fixed top-4 left-0 w-full z-10">
+      <div className="glass flex justify-between items-center dark:text-white bg-black/10 backdrop-blur-lg rounded-full py-3 px-9 box-border mx-16 my-2">
+      <img
+          src="./assets/images/logo-indev.png"
+          alt="logo-indev"
+          className="logo w-36 h-auto"
+        />
+        <ul className="navigationLink flex justify-between gap-9">
           <li>
             <Link to="/" className="hover:underline">
               HOME
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:underline text-blue-400">
+            <Link to="/about" className="hover:underline text-white-400 transition-all">
               ABOUT
             </Link>
           </li>
@@ -34,17 +38,17 @@ const NavAbout = () => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
 
-      {/* About Us Section */}
-      <div className="px-8 py-16">
-        <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
+    {/* About Us Section */}
+    <div className="px-8 py-16">
+    <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
         <p className="text-lg text-center max-w-3xl mx-auto mb-16">
           <strong>INDEV</strong> is an information technology company specializing in web and mobile application development, software development, and IT solutions. Established in 2013, we have been a trusted IT company for various organizations. With a strong dedication to service excellence, we aim to continuously set the standard in IT innovation.
         </p>
-
-        {/* Vision & Mission Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+    {/* Vision & Mission Section */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
           <div className="bg-gray-800 p-6 rounded-lg">
             <h2 className="text-xl font-semibold mb-4">Our Vision</h2>
             <p>
@@ -60,7 +64,6 @@ const NavAbout = () => {
             </ul>
           </div>
         </div>
-
         {/* Core Values Section */}
         <div className="mt-16">
           <h2 className="text-2xl font-bold text-center mb-8">Core Values</h2>
@@ -76,7 +79,6 @@ const NavAbout = () => {
           </div>
         </div>
       </div>
-
       {/* Call to Action Section */}
       <div className="bg-gradient-to-r from-blue-800 to-blue-600 py-16 text-center">
         <h2 className="text-3xl font-bold mb-4">Get Started Today</h2>

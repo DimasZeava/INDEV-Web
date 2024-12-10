@@ -2,10 +2,15 @@ import React from "react";
 
 const WhyUs = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-black to-gray-900 px-4">
+    <div className="flex justify-center items-center min-h-screen bg-gradient from-black to-gray-900 px-4">
       <div className="max-w-4xl rounded-lg shadow-lg bg-black/80 text-white p-8">
-        <h2 className="text-3xl font-semibold mb-6">Why Must Us?</h2>
-        <ul className="space-y-6">
+      <div className='flex'>
+        <h2 className="z-10 flex-none bg-black/90 backgdrop-blur-lg p-4 text-2xl font-bold mb-0 text-3xl">Why Must Us?</h2>
+        <div className="curve-about flex-1 bg-white/10 backdrop-blur-md p-5 rounded-tl-full" style={{
+          clipPath: "polygon(4% 0, 100% 0, 100% 0, 100% 100%, 0% 100%)",
+        }}></div>
+        </div>
+        <ul className="bg-white/10 backdrop-blur-md p-5 rounded-s-3xl space-y-6">
           {/* Item 1 */}
           <li>
             <p className="font-bold text-lg">Customized Solutions</p>

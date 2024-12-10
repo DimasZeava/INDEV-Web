@@ -45,3 +45,62 @@ body {
   bottom: 0;
   z-index: -1;
 }
+
+/* Card container */
+.why-us-card {
+  @apply bg-black backdrop-blur-md;
+  background: rgba(0, 0, 0, 0.7); /* Transparansi */
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Shadow */
+  position: relative;
+}
+
+/* Header dengan shape */
+.why-us-header {
+  @apply bg-black backdrop-blur-md;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Judul */
+.why-us-title {
+  @apply bg-black backdrop-blur-md;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Shape pada kanan header */
+.why-us-curve {
+  @apply bg-black backdrop-blur-md;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1); /* Transparansi putih */
+  backdrop-filter: blur(10px); /* Blur untuk efek kaca */
+  height: 80px;
+  border-top-left-radius: 100px; /* Melengkung pada kiri atas */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.curve-bottom-testiomal::after {
+  @apply bg-black backdrop-blur-md;
+  content: '';
+  position: absolute;
+  border-radius: 0 0 0 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
