@@ -1,11 +1,13 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HeroSection from "./components/HeroSectionResult";
+import ResultCard from "./components/Resultcard";
 import About from "./components/About";
 import Services from "./components/Services";
 import Portofolio from "./components/Portofolio";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HeroSectionResult from "./components/HeroSectionResult";
-import ClientCard from "./components/ClientCard";
 
 const App = () => {
   return (
@@ -24,7 +26,6 @@ const App = () => {
       <About />
       <Services />
       <Portofolio />
-      <ClientCard />
       <Footer />
     </>
   );
