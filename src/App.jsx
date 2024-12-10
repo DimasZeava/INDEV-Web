@@ -11,6 +11,7 @@ import NavAbout from "./components/NavAbout";
 import Testimonial from "./components/Testimonial";
 import WhyUs from "./components/WhyUs";
 import GetStarted from "./components/GetStarted"; // Import komponen GetStarted
+import ClientCard from "./components/ClientCard";
 
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
               <About />
               <Services />
               <Portofolio />
-              <Testimonial />
+              <ClientCard />
               <WhyUs />
               <GetStarted />
               <Footer />
