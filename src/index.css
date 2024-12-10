@@ -45,3 +45,27 @@ body {
   bottom: 0;
   z-index: -1;
 }
+
+.curve-bottom-portfolio::before {
+  @apply bg-black backdrop-blur-md;
+  content: '';
+  position: absolute;
+  border-radius: 24px 0 0 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.curve-bottom-client::before {
+  @apply bg-black backdrop-blur-md;
+  content: '';
+  position: absolute;
+  border-radius: 24px 0 0 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

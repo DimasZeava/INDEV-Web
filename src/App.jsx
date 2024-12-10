@@ -5,6 +5,7 @@ import Portofolio from "./components/Portofolio";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HeroSectionResult from "./components/HeroSectionResult";
+import ClientCard from "./components/ClientCard";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <About />
       <Services />
       <Portofolio />
+      <ClientCard />
       <Footer />
     </>
   );
