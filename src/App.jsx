@@ -1,17 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HeroSection from "./components/HeroSectionResult";
 import ResultCard from "./components/Resultcard";
 import About from "./components/About";
+import ServicesPage from "./pages/ServicesPage";
 import Services from "./components/Services";
 import Portofolio from "./components/Portofolio";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NavAbout from "./components/NavAbout";
-import Testimonial from "./components/Testimonial";
 import WhyUs from "./components/WhyUs";
 import GetStarted from "./components/GetStarted"; // Import komponen GetStarted
 import ClientCard from "./components/ClientCard";
+import HeroSection from "./components/HeroSection";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -35,7 +36,13 @@ const App = () => {
               </div>
               <ResultCard />
               <About />
-              <Services />
+              <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-3xl font-bold mb-4 text-white">Our Services</h3>
+                <p className="text-gray-300 mb-2">
+                  What you consider a problem, we consider our specialty
+                </p>
+                <Services />
+              </div>
               <Portofolio />
               <ClientCard />
               <WhyUs />
@@ -47,6 +54,10 @@ const App = () => {
 
         {/* Rute Halaman About */}
         <Route path="/about" element={<NavAbout />} />
+
+        <Route path="/services" element={<ServicesPage />} />
+
+        <Route path="/contact" element={<ContactPage />} />
 
         {/* Rute Baru untuk Halaman GetStarted */}
         <Route path="/get-started" element={<GetStarted />} />

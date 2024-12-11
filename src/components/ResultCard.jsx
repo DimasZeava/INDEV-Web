@@ -9,7 +9,7 @@ const ResultCard = () => {
   ];
 
   return (
-    <section className="relative -mt-10 text-white">
+    <section className="relative mb-10 text-white">
       <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
         {stats.map((stat, index) => (
           <div key={index} className="flex flex-col items-center">

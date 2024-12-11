@@ -42,7 +42,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar fixed top-4 left-0 w-full z-10">
+    <nav className="navbar fixed top-4 left-0 w-full z-20">
       <div className="glass flex justify-between items-center dark:text-white bg-black/10 backdrop-blur-lg rounded-full py-3 px-9 box-border mx-16 my-2">
         <img
           src="./assets/images/logo-indev.png"
