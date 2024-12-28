@@ -1,17 +1,11 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer className="bottom-0 w-full">
-      <div
-        className="w-full flex flex-col md:flex-row justify-between items-start p-10 bg-black/50 backdrop-blur-md rounded-3xl border border-white/10 shadow-lg"
-      >
-        {/* Logo dan Deskripsi */}
+      <div className="w-full flex flex-col md:flex-row justify-between items-start p-10 bg-black/50 backdrop-blur-md rounded-t-3xl shadow-lg">
         <div className="mb-6 md:mb-0">
           <div className="flex items-center mb-4 pl-5">
-            {/* Logo */}
             <img
-              src="/assets/images/logo-indev.png" // Ganti dengan path logo Anda
+              src="/assets/images/logo-indev.png"
               alt="Indev Logo"
               className="w-auto h-20"
             />
@@ -23,7 +17,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Menu Navigasi (Vertikal) */}
         <nav>
           <ul className="flex flex-col space-y-2 text-left pr-20">
             <li>

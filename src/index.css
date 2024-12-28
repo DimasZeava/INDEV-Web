@@ -34,19 +34,44 @@ body {
   z-index: -1;
 }
 
-
-.curve-top-portfolio::before {
-  @apply bg-black backdrop-blur-md;
+.curve-top-portfolio::after{
   content: '';
+  display: block;
   position: absolute;
-  border-radius: 0 0 0 24px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  width: 40%;
+  height: 105%;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  transform: translate(200%, -73%);
   z-index: -1;
 }
 
+.curve-bottom-portfolio::after{
+  content: '';
+  display: block;
+  position: absolute;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  width: 10%;
+  height: 102%;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  transform: translate(700%, 0%);
+  z-index: -1;
+}
+
+.curve-bottom-client::after{
+  content: '';
+  display: block;
+  position: absolute;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  width: 40%;
+  height: 102%;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  transform: translate(70%, 0%);
+  z-index: -1;
+}
 /* Card container */
 .why-us-card {
   @apply bg-black backdrop-blur-md;

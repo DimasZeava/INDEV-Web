@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = () => {
   return (
     <section className="flex text-white py-10 px-6 max-w-6xl mx-auto">

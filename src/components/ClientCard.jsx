@@ -1,5 +1,3 @@
-import React from "react";
-
 const ClientCard = () => {
   return (
     <div className="flex flex-col justify-center items-center max-w-6xl mx-auto p-6">
@@ -34,11 +32,11 @@ const ClientCard = () => {
               dalam mengakslerasi bisnis lewat teknologi. Sukses selalu.
             </p>
             <div className="flex">
-              <div className="flex flex-col text-white pr-28 pb-[35px] rounded-full">
+              <div className="curve-bottom-client flex flex-col text-white pr-28 pb-[35px] rounded-full">
                 <h3 className="text-2xl font-bold">Wawan Speaking</h3>
                 <h2>Founder Moksha Indonesia</h2>
               </div>
-              <div className="curve-bottom-client bg-white/10 backdrop-blur-md flex-1 rounded-l-3xl"></div>
+              <div className="bg-black backdrop-blur-md flex-1"></div>
             </div>
           </div>
         </div>

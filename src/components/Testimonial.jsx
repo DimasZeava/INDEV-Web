@@ -1,25 +1,18 @@
-import React from "react";
-
 const Testimonial = () => {
   return (
     <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-black via-gray-800 p-8 curve-bottom-testiominal">
-      {/* Header */}
       <h2 className="text-4xl font-semibold text-white mb-12 text-center">
         What <br /> Our Client Say
       </h2>
 
-      {/* Testimonial Card */}
       <div className="flex max-w-5xl mx-auto rounded-lg shadow-lg bg-black/50 text-white p-8 items-center">
-        {/* Client Image */}
         <div className="flex">
           <img
-            src="assets/images/wawan.png" // Ganti dengan path gambar Anda
+            src="assets/images/wawan.png"
             alt="Client"
             className="w-90 h-80 object-cover"
           />
         </div>
-
-        {/* Testimonial Text */}
         <div>
           <p className="text-lg mb-6 leading-relaxed">
             Indevo mampu menciptakan diorama imaji yang penuh ritmik lewat
@@ -28,7 +21,7 @@ const Testimonial = () => {
             mengangkat topi setinggi-tingginya untuk Indevo. Sebuah Perusahaan
             pengembang teknologi yang tak hanya berkutat soal kode rumit
             aritmatis tapi mampu menghasilkan gagasan dan produk yang
-            'kharsimatik'.
+            &quot;kharismatik&quot;.
           </p>
           <p className="text-lg mb-6 leading-relaxed">
             Indevo bagi kami adalah entitas industri yang kukuh mendobrak stigma

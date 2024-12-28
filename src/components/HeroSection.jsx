@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroSection = () => {
   const handleButtonClick = () => {
     alert("Button clicked!"); // Ganti dengan fungsi yang diinginkan
@@ -7,7 +5,7 @@ const HeroSection = () => {
 
   return (
     <section className="text-white">
-      <div className="max-w-6xl mx-auto text-center rounded-xl bg-white/10 backdrop-blur-md py-8 px-40">
+      <div className="hero-card max-w-6xl mx-auto text-center rounded-xl bg-white/10 backdrop-blur-md py-8 px-40">
         <h1 className="text-5xl font-bold text-white mb-6">
           Not Offering a Service but Providing a Solution
         </h1>
