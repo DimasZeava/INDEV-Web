@@ -106,7 +106,7 @@ const NavAbout = () => {
           Ready to optimize your business? Start collaborating with us.
         </p>
         <button className="px-6 py-3 bg-blue-900 text-white rounded-lg shadow-lg hover:bg-blue-700">
-          Contact Us
+          Get in Touch
         </button>
       </div>
 
