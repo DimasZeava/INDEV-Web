@@ -1,17 +1,51 @@
-import React from 'react'
+import React from "react";
 
 const EmailCard = () => {
+  const cardStyle = {
+    width: "100%",
+    height: "77px",
+    backgroundColor: "#444",
+    borderRadius: "10px",
+    display: "flex",
+    alignItems: "center",
+    padding: "20px 20px",
+    gap: "20px",
+    marginBottom: "10px", // Jarak antar kotak
+    color: "#fff",
+  };
+
+  const iconStyle = {
+    width: "40px",
+    height: "40px",
+    backgroundColor: "#666",
+    borderRadius: "50%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: "18px",
+    fontWeight: "bold",
+  };
+
+  const textStyle = {
+    display: "flex",
+    flexDirection: "column",
+    fontSize: "14px",
+  };
+
+  const emailStyle = {
+    fontSize: "12px",
+    color: "#bbb",
+  };
+
   return (
-    <div className="flex gap-10 items-center p-4 rounded-3xl bg-[#2C2727] w-96">
-      <div className="flex justify-center items-center w-8 h-8 p-10 bg-blue-500 text-white rounded-full">
-        email
-      </div>
-      <div className="mt-4 w-full text-start">
-        <h2 className="text-xl font-bold text-white">Email</h2>
-        <p className="text-gray-700">email@email.com</p>
+    <div style={cardStyle}>
+      <div style={iconStyle}>✉️</div>
+      <div style={textStyle}>
+        <span>Email</span>
+        <span style={emailStyle}>example@gmail.com</span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default EmailCard
+export default EmailCard;

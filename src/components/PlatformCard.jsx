@@ -1,19 +1,19 @@
 import React from "react";
-import EmailCard from "./EmailCard";
+import './PlatformCard.css'; // Import file CSS untuk SC 3
+import EmailCard from "./EmailCard"; // Menggunakan EmailCard yang sudah ada
 
 const PlatformCard = () => {
   return (
-    <div className="flex flex-col">
-      <div className="flex">
-        <h3 className="text-white">Our Platform</h3>
-        <div className=""></div>
-      </div>
-      <div className="px-5 py-2 bg-white/10 backdrop-blur-md gap-3 flex flex-col justify-center items-center max-w-md rounded-l-3xl rounded-b-3xl">
-        <EmailCard />
-        <EmailCard />
-        <EmailCard />
-        <EmailCard />
-      </div>
+    <div className="folder-containeR platform-card">
+      <form className="folder-form">
+        
+        <div className="email-list">
+          <EmailCard />
+          <EmailCard />
+          <EmailCard />
+          <EmailCard />
+        </div>
+      </form>
     </div>
   );
 };

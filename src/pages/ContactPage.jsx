@@ -21,14 +21,18 @@ const ContactPage = () => {
             </p>
           </div>
         </section>
-        <div className="flex justify-center align-middle items-center">
+
+        {/* Divider */}
+        <div className="flex justify-center items-center mt-12">
           <hr className="w-60 border-gray-300 mx-4" />
           <h5 className="text-gray-300">Contact Us</h5>
           <hr className="w-60 border-gray-300 mx-4" />
         </div>
-        <div className="flex gap-10 justify-center items-center w-full h-full">
-        <PlatformCard />
-        <ContactCard />
+
+        {/* Cards Section */}
+        <div className="flex justify-center items-center gap-10 mt-20">
+          <PlatformCard />
+          <ContactCard />
         </div>
       </div>
       <GetStarted />
