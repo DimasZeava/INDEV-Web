@@ -130,3 +130,57 @@ body {
   bottom: 0;
   z-index: -1;
 }
+
+/* Curve Contact */
+.top-contact-curve-left::after {
+  content: '';
+  display: block;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  width: 20%;
+  height: 160%;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  transform: translate(425%, -20%);
+  z-index: -1;
+}
+
+.top-contact-curve-right::after {
+  content: '';
+  display: block;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  width: 20%;
+  height: 160%;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  transform: translate(-55%, -20%);
+  z-index: -1;
+}
+
+/* Curve Platforms */
+.top-platform-curve-right::after {
+  content: '';
+  display: block;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 0% 100%, 0% 100%);
+  width: 20%;
+  height: 255%;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  transform: translate(-140%, -20%);
+  z-index: -1;  
+}
+
+.top-message-curve-left::after {
+  content: '';
+  display: block;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+  width: 5%;
+  height: 250%;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  transform: translate(1900%, -20%);
+  z-index: -1;
+}
