@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GetStarted from "../components/GetStarted";
@@ -31,10 +30,11 @@ const ContactPage = () => {
         </section>
 
         {/* Divider */}
-        <div className="flex justify-center items-center mt-12">
-          <hr className="w-80 border-gray-300 mx-4" />
-          <h5 className="text-gray-300">Our Contacts</h5>
-          <hr className="w-80 border-gray-300 mx-4" />
+        <div className="relative text-center">
+          <div className="border-t border-gray-700 absolute inset-0 top-1/2"></div>
+          <span className="bg-black px-4 relative text-sm text-gray-300">
+            Our Contact
+          </span>
         </div>
 
         {/* Cards Section */}
